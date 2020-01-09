@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>English</string>
+    <key>CFBundleGetInfoString</key>
+    <string>LiluHelper 1.0, Copyright © 2018 the-braveknight. All rights reserved.</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.apple.security.LiluHelper</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleName</key>
+    <string>LiluHelper</string>
+    <key>CFBundlePackageType</key>
+    <string>KEXT</string>
+    <key>CFBundleVersion</key>
+    <string>1.0</string>
+    <key>IOKitPersonalities</key>
+    <dict>
+        <key>LiluHelper</key>
+        <dict>
+            <key>CFBundleIdentifier</key>
+            <string>com.apple.kpi.iokit</string>
+            <key>IOClass</key>
+            <string>IOService</string>
+            <key>IOMatchCategory</key>
+            <string>LiluHelper</string>
+            <key>IOProviderClass</key>
+            <string>IOResources</string>
+            <key>IOResourceMatch</key>
+            <string>IOKit</string>
+        </dict>
+    </dict>
+    <key>OSBundleLibraries</key>
+    <dict>
+        <key>as.lvs1974.AirportBrcmFixup</key>
+        <string>1.0</string>
+        <key>as.vit9696.AppleALC</key>
+        <string>1.0</string>
+        <key>as.vit9696.Lilu</key>
+        <string>1.2.0</string>
+        <key>as.vit9696.SMCProcessor</key>
+        <string>1.0</string>
+        <key>as.vit9696.VirtualSMC</key>
+        <string>1.0</string>
+        <key>as.vit9696.WhateverGreen</key>
+        <string>1.0</string>
+        <key>com.apple.kpi.bsd</key>
+        <string>12.0.0</string>
+        <key>com.apple.kpi.iokit</key>
+        <string>12.0.0</string>
+        <key>com.apple.kpi.libkern</key>
+        <string>12.0.0</string>
+        <key>com.apple.kpi.mach</key>
+        <string>12.0.0</string>
+        <key>com.apple.kpi.unsupported</key>
+        <string>12.0.0</string>
+        <key>ru.joedm.SMCSuperIO</key>
+        <string>1.0</string>
+        <key>ru.usrsse2.SMCBatteryManager</key>
+        <string>1.0.0</string>
+        <key>xyz.racermaster.NoTouchID</key>
+        <string>1.0</string>
+    </dict>
+</dict>
+</plist>
