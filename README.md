@@ -10,6 +10,8 @@ files necessary to boot macOS Catalina on Lenovo Legion Y520
 
 ### Usage
 
+**Clover r5116**
+
 **NOTE: SSDTs that are pre-generated are specific to the machine that this repo is based on and may not work properly for another machine.**
 
 ### Credits
