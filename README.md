@@ -1,6 +1,9 @@
 # LEGION-Y520-macOS
 files necessary to boot macOS Catalina on Lenovo Legion Y520
 
+**Clover r5116**
+**OpenCore v0.5.8**
+
 ### Specifications
 
 - CPU: i5 7300HQ
@@ -9,8 +12,6 @@ files necessary to boot macOS Catalina on Lenovo Legion Y520
 - WIFI: DW1560/BCM94352Z
 
 ### Usage
-
-**Clover r5116**
 
 **NOTE: SSDTs that are pre-generated are specific to the machine that this repo is based on and may not work properly for another machine.**
 
