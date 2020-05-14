@@ -2,6 +2,7 @@
 files necessary to boot macOS Catalina on Lenovo Legion Y520
 
 **Clover r5116**
+
 **OpenCore v0.5.8**
 
 ### Specifications
