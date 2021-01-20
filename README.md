@@ -1,9 +1,12 @@
 # LEGION-Y520-macOS
-files necessary to boot macOS Catalina on Lenovo Legion Y520
+files necessary to boot macOS on Lenovo Legion Y520
 
-**Clover r5116**
+Catalina (10.15.X):
+- Clover r5122
+- OpenCore v0.6.5
 
-**OpenCore v0.5.8**
+Big Sur (11.X):
+- OpenCore v0.6.5
 
 ### Specifications
 
@@ -14,7 +17,15 @@ files necessary to boot macOS Catalina on Lenovo Legion Y520
 
 ### Usage
 
+Update SMBIOS with generated data before using.
+
 **NOTE: SSDTs that are pre-generated are specific to the machine that this repo is based on and may not work properly for another machine.**
+
+### TODO
+
+- implement script to fetch/build needed resources from source
+- fix trackpad physical buttons
+- rebuild SSDT with OS conditional (booting Windows from OC makes it bootloop)
 
 ### Credits
 - [abdulilah99](https://github.com/abdulilah99) (original HS guide)
@@ -24,4 +35,5 @@ files necessary to boot macOS Catalina on Lenovo Legion Y520
 - [vit9696](https://github.com/vit9696)
 - [Mieze](https://github.com/Mieze)
 - Clover Team
+- OpenCore Team
 - others

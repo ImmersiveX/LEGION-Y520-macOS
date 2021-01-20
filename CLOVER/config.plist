@@ -129,10 +129,14 @@
 		<key>Timeout</key>
 		<integer>5</integer>
 		<key>DefaultVolume</key>
-		<string></string>
+		<string>SSD</string>
 	</dict>
 	<key>Devices</key>
 	<dict>
+		<key>Audio</key>
+		<dict/>
+		<key>Inject</key>
+		<string>14</string>
 		<key>Properties</key>
 		<dict>
 			<key>Audio</key>
@@ -162,7 +166,7 @@
 	<dict>
 		<key>Hide</key>
 		<array>
-			<string>Recovery</string>
+            <string>Recovery</string>
 			<string>Preboot</string>
 		</array>
 		<key>Mouse</key>
@@ -209,12 +213,18 @@
 		<key>BooterConfig</key>
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
-		<string>0x00</string>
+		<string>0x67</string>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
+		<key>BoardSerialNumber</key>
+		<string>XXXXXXXXXXXXXXXXX</string>
 		<key>ProductName</key>
 		<string>MacBookPro14,3</string>
+		<key>SerialNumber</key>
+		<string>C02VTQZ8HTD5</string>
+		<key>SmUUID</key>
+		<string>11111111-1111-1111-1111-111111111111</string>
 		<key>Trust</key>
 		<true/>
 	</dict>
