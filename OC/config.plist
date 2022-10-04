@@ -291,13 +291,13 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>VoodooTSCSync.kext</string>
+				<string>CpuTscSync.kext</string>
 				<key>Comment</key>
 				<string>TSC Sync</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/VoodooTSCSync</string>
+				<string>Contents/MacOS/CpuTscSync</string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
@@ -423,11 +423,13 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>BrcmBluetoothInjector.kext</string>
+				<string>BlueToolFixup.kext</string>
 				<key>Comment</key>
 				<string>Bluetooth Injector</string>
 				<key>Enabled</key>
 				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/BlueToolFixup</string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
@@ -452,6 +454,18 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/BrcmPatchRAM3</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>NVMeFix.kext</string>
+				<key>Comment</key>
+				<string>NVMe Fix</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/NVMeFix</string>
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
@@ -521,6 +535,8 @@
 			<false/>
 			<key>PowerTimeoutKernelPanic</key>
 			<false/>
+			<key>SetApfsTrimTimeout</key>
+			<integer>-1</integer>
 			<key>ThirdPartyDrives</key>
 			<false/>
 			<key>XhciPortLimit</key>
@@ -549,11 +565,13 @@
 			<key>HideAuxiliary</key>
 			<true/>
 			<key>PickerAttributes</key>
-			<integer>1</integer>
+			<integer>17</integer>
 			<key>PickerAudioAssist</key>
 			<false/>
 			<key>PickerMode</key>
 			<string>External</string>
+			<key>PickerVariant</key>
+			<string>Auto</string>
 			<key>PollAppleHotKeys</key>
 			<false/>
 			<key>ShowPicker</key>
@@ -602,11 +620,11 @@
 				<key>Arguments</key>
 				<string></string>
 				<key>Auxiliary</key>
-				<false/>
+				<true/>
 				<key>Comment</key>
 				<string>Windows</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Name</key>
 				<string>Windows</string>
 				<key>Path</key>
@@ -624,7 +642,7 @@
 			<key>AuthRestart</key>
 			<false/>
 			<key>BootProtect</key>
-			<string>Bootstrap</string>
+			<string>None</string>
 			<key>DmgLoading</key>
 			<string>Signed</string>
 			<key>EnablePassword</key>
@@ -646,6 +664,20 @@
 		</dict>
 		<key>Tools</key>
 		<array>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Auxiliary</key>
+				<true/>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>Name</key>
+				<string>Clean Nvram</string>
+				<key>Path</key>
+				<string>CleanNvram.efi</string>
+			</dict>
 			<dict>
 				<key>Arguments</key>
 				<string></string>
@@ -785,9 +817,30 @@
 		</dict>
 		<key>Drivers</key>
 		<array>
-			<string>HFSPlus.efi</string>
-			<string>OpenRuntime.efi</string>
-			<string>OpenCanopy.efi</string>
+			<dict>
+				<key>Path</key>
+				<string>OpenHfsPlus.efi</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Arguments</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Path</key>
+				<string>OpenRuntime.efi</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Arguments</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>Path</key>
+				<string>OpenCanopy.efi</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Arguments</key>
+				<string></string>
+			</dict>
 		</array>
 		<key>ConnectDrivers</key>
 		<true/>
@@ -887,7 +940,7 @@
 			<key>ReleaseUsbOwnership</key>
 			<true/>
 			<key>RequestBootVarRouting</key>
-			<false/>
+			<true/>
 			<key>TscSyncTimeout</key>
 			<integer>0</integer>
 			<key>UnblockFsConnect</key>

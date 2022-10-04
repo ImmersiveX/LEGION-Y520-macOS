@@ -1,19 +1,19 @@
 # LEGION-Y520-macOS
-files necessary to boot macOS on Lenovo Legion Y520
+EFI for Lenovo Legion Y520
 
-Catalina (10.15.X):
-- Clover r5122
-- OpenCore v0.6.5
+##OpenCore 0.8.4
 
-Big Sur (11.X):
-- OpenCore v0.6.5
+Known to work on:
+- Monterey 12.6
+- Big Sur 11.7
 
 ### Specifications
 
 - CPU: i5 7300HQ
-- RAM: 8GB 2400Mhz (1x8GB)
+- RAM: 24GB 2400Mhz (1x16GB + 1x8GB)
 - GPU: Intel HD 630 & Nvidia GTX 1050Ti 4G (Nvidia disabled in macOS)
 - WIFI: DW1560/BCM94352Z
+- SSD: Samsung 970 Pro 1TB (known TRIM issues, NVMeFix.kext can be removed if not needed)
 
 ### Usage
 
@@ -25,7 +25,8 @@ Update SMBIOS with generated data before using.
 
 - implement script to fetch/build needed resources from source
 - fix trackpad physical buttons
-- rebuild SSDT with OS conditional (booting Windows from OC makes it bootloop)
+- rebuild SSDT with OS conditional (booting Windows from OC can make it 
+bootloop)
 
 ### Credits
 - [abdulilah99](https://github.com/abdulilah99) (original HS guide)
