@@ -1,7 +1,7 @@
 # LEGION-Y520-macOS
 EFI for Lenovo Legion Y520
 
-**OpenCore 0.8.4
+**OpenCore 0.8.4**
 
 Known to work on:
 - Monterey 12.6
